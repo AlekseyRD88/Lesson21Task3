@@ -6,20 +6,30 @@ html {
    color: #555;
    font-size: 16px;
 }
-h1 {
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.header > h1 {
    color: white;
    text-align: center;
    background-image: linear-gradient(60deg, red, orange);
+   margin: auto;
+   height: 2.25em;
+   line-height: 2.25em;
+   min-width: 100vw;
 }
 .main {
    display: flex;
-   min-height: 100vh;
-   min-width: 100vw;
+   flex: 1 0 auto;
 }
 .footer {
    background-color: #e5e5e5;
    padding: 0.5em;
    text-align: center;
+   flex: 0 0 auto;
 }
 .navigation {
    padding: 0.5em;
@@ -56,13 +66,14 @@ h1 {
    color: white;
    margin-bottom: 0.5em;
    line-height: 2em;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 .nav-list-link {
    padding-left: 0.5em;
    padding-right: 0.5em;
    color: white;
    text-decoration: none;
-   overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
+   
 }
