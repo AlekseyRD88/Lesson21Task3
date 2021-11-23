@@ -18,8 +18,7 @@ body {
    background-image: linear-gradient(60deg, red, orange);
    margin: auto;
    
-   line-height: 2.25em;
-   min-width: 100vw;
+  
 }
 .main {
    display: flex;
